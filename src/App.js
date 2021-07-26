@@ -5,11 +5,16 @@ function App() {
   return (
     <div className="Container">
       <div className="Web">
-        <div className="Title">Rina's Dashboard</div>
-        <div className="Info">info</div>
-        <div className="Main">main
-          {/* main
-          <div className="WeekCont">week</div> */}
+        <div className="Nav"></div>
+        <div className="Main">
+          <div className="Header">Dashboard</div>
+          <div className="Body">
+            <div className="MainSec">
+              <div className="InfoCont"></div>
+              <div className="WeeklyCont"></div>
+            </div>
+            <div className="Aside"></div>
+          </div>
         </div>
       </div>
     </div>
