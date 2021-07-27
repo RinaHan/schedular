@@ -29,6 +29,10 @@
   width: 10%;
   height: 95%;
   border-right: 2px solid #c7b7d1;
+  font-weight: bold;
+  color: #715b80;
+  font-size: 18px;
+  text-align: center;
   // background-color: #dad;
 }
 .Main {
@@ -38,7 +42,7 @@
 }
 .Header {
   width: 100%;
-  height: 8%;
+  height: 7%;
   font-weight: bold;
   color: #715b80;
   font-size: 18px;
@@ -61,20 +65,51 @@
 }
 .InfoCont {
   width: 100%;
-  height: 20%;
+  height: 30%;
   margin-bottom: 20px;
   // background-color: #fbf7fc;
   // border-radius: 15px;
   // box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   // border: 1px solid #dddbe1;
+  display: flex;
+  flex-direction: column;
+}
+.InputCont{
+  display: flex;
+  flex-direction:column;
+  width:200px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  color: #715b80;
+  font-size: 15px;
+  > input{
+    height:25px;
+    border:none;
+    border-radius: 5px;
+  }
+  ::placeholder{
+    color:#dad;
+    padding-left: 5px;
+  }
 }
 .WeeklyCont {
   width: 100%;
   height: 50%;
+// background-color: red;
+  display:flex;
+  justify-content: space-between;
+}
+.Day{
+  font-weight: bold;
+  color: #9d85ad;
+  width:14%;
   background-color: #fbf7fc;
   border-radius: 15px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   border: 1px solid #dddbe1;
+  font-size: 15px;
+  text-align: center;
+  padding:10px 0;
 }
 .Aside {
   background-color: #fbf7fc;
