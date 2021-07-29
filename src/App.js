@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.scss";
 import DateComponent from "./comps/DateComponent";
+import Inputs from "./comps/Inputs";
 // import Select from "./comps/Select";
 
 const Date = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
@@ -16,20 +17,22 @@ function App() {
             <div className="MainSec">
 
               <div className="InfoCont">
-                <div className="InputCont">
+                {/* <div className="InputCont">
                   <label for="a">Title</label>
                   <input id="a" type="text" placeholder="Title" />
-                </div>
+                </div> */}
+                <Inputs label="Title" type="text" placeholder="Title"/>
                 <div className="InputCont">
                   <DateComponent />
                 </div>
-                <div className="InputCont">
+                {/* <div className="InputCont">
                   <label for="c">Time</label>
                   <input id="c" type="number" placeholder="Hours" />
-                </div>
+                </div> */}
+                <Inputs label="Hours" type="text" placeholder="Hours"/>
                 <button className="ButtonCont"
               onClick={()=>{
-                
+
               }}
                 >
                 Create the schedule
